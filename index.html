@@ -1,6 +1,7 @@
-Here is the updated code:
+Here is a simple HTML and CSS code for a contact us page:
 
-**HTML:**
+**HTML Code:**
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -17,37 +18,38 @@ Here is the updated code:
     <main>
         <section class="contact-info">
             <h2>Get in Touch</h2>
-            <p>Phone: 555-555-5555</p>
-            <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
-            <p>Address: 123 Main St, Anytown, USA 12345</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <ul>
+                <li><i class="fas fa-phone"></i> +1 (123) 456 7890</li>
+                <li><i class="fas fa-envelope"></i> <a href="mailto:info@example.com">info@example.com</a></li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 Main St, Anytown, USA 12345</li>
+            </ul>
         </section>
         <section class="contact-form">
             <h2>Send Us a Message</h2>
             <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name"><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message"></textarea><br><br>
-                <input type="submit" value="Send">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="phone" name="phone" placeholder="Phone">
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2023 Example Company</p>
+        <p>&copy; 2023 Contact Us Page</p>
     </footer>
 </body>
 </html>
 ```
 
-**CSS (in style.css file):**
+**CSS Code (in style.css file):**
+
 ```css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Changed background color to light gray */
 }
 
 header {
@@ -60,50 +62,70 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
 }
 
 .contact-info {
-    flex-basis: 30%;
-    margin: 20px;
+    width: 40%;
     padding: 20px;
+    background-color: #f7f7f7;
     border: 1px solid #ddd;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-info li:last-child {
+    border-bottom: none;
+}
+
+.contact-info i {
+    margin-right: 10px;
 }
 
 .contact-form {
-    flex-basis: 60%;
-    margin: 20px;
+    width: 50%;
     padding: 20px;
+    background-color: #f7f7f7;
     border: 1px solid #ddd;
-    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    display: block;
-    margin-bottom: 10px;
+.contact-form h2 {
+    margin-top: 0;
 }
 
-input[type="text"], input[type="email"], textarea {
+.contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
 }
 
-input[type="submit"] {
+.contact-form button[type="submit"] {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
+.contact-form button[type="submit"]:hover {
     background-color: #444;
 }
 
@@ -115,3 +137,7 @@ footer {
     clear: both;
 }
 ```
+
+This code creates a simple contact us page with a header, main section, and footer. The main section is divided into two parts: contact information and contact form. The contact information section displays the company's phone number, email, and address. The contact form section allows users to send a message to the company. The CSS adds basic styling to the page, including layout, colors, and fonts.
+
+Note: You'll need to add the Font Awesome CSS file to your project to use the icons in the code. You can do this by adding the following line to the `<head>` section of your HTML file: `<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />`.
