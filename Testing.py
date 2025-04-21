@@ -1,47 +1,24 @@
 Here is a Python code to check if a given string is a palindrome or not:
 ```
 def is_palindrome(s):
+    """
+    Returns True if the input string is a palindrome, False otherwise.
+    """
     return s == s[::-1]
 
 # Test the function
-string = input("Enter a string: ")
-if is_palindrome(string):
-    print("The string is a palindrome.")
+input_string = input("Enter a string: ")
+if is_palindrome(input_string):
+    print("The string is a palindrome!")
 else:
     print("The string is not a palindrome.")
 ```
-Here's how the code works:
+Here's an explanation of the code:
 
 * The `is_palindrome` function takes a string `s` as input.
-* It checks if the string is equal to its reverse (`s[::-1]`). If they are equal, it means the string is a palindrome.
-* The `input` function is used to get a string input from the user.
-* The `if` statement checks the result of the `is_palindrome` function and prints a message accordingly.
+* We use slicing to get the characters of the string in reverse order, i.e., `s[::-1]`. This is a common Python idiom to reverse a string.
+* We then compare the original string `s` with the reversed string `s[::-1]`. If they are the same, the string is a palindrome, and we return `True`. Otherwise, we return `False`.
+* In the main part of the code, we prompt the user to enter a string, and then call the `is_palindrome` function with the input string.
+* Depending on the result, we print a message indicating whether the string is a palindrome or not.
 
-You can also use a more efficient approach using slicing:
-```
-def is_palindrome(s):
-    return s == ''.join(reversed(s))
-
-# Test the function
-string = input("Enter a string: ")
-if is_palindrome(string):
-    print("The string is a palindrome.")
-else:
-    print("The string is not a palindrome.")
-```
-This code uses the `reversed` function to reverse the string and then joins the characters back together using the `join` method.
-
-You can also ignore case and whitespace by modifying the code as follows:
-```
-def is_palindrome(s):
-    s = s.lower().replace(" ", "")
-    return s == s[::-1]
-
-# Test the function
-string = input("Enter a string: ")
-if is_palindrome(string):
-    print("The string is a palindrome.")
-else:
-    print("The string is not a palindrome.")
-```
-This code converts the input string to lowercase and removes whitespace characters before checking if it's a palindrome.
+You can save this code to a file (e.g., `palindrome.py`) and run it from the command line using `python palindrome.py`. Then, enter a string when prompted, and the program will tell you whether it's a palindrome or not!
