@@ -3,7 +3,7 @@ Here is a Python code to print the table of 2:
 for i in range(1, 11):
     print(f"2 x {i} = {2 * i}")
 ```
-This code uses a `for` loop to iterate from 1 to 10, and prints the multiplication of 2 with each number in the range.
+This code uses a `for` loop to iterate from 1 to 10, and for each iteration, it prints the multiplication of 2 with the current number using an f-string.
 
 Output:
 ```
@@ -18,4 +18,4 @@ Output:
 2 x 9 = 18
 2 x 10 = 20
 ```
-Let me know if you have any questions or need further modifications!
+Let me know if you have any questions or need further assistance!
