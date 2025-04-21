@@ -1,29 +1,21 @@
-Here is a simple Python code to calculate the factorial of a given number:
+Here is a Python code to print the table of 2:
 ```
-def factorial(n):
-    if n == 0:
-        return 1
-    else:
-        return n * factorial(n-1)
-
-num = int(input("Enter a number: "))
-result = factorial(num)
-print("The factorial of", num, "is", result)
+for i in range(1, 11):
+    print(f"2 x {i} = {2 * i}")
 ```
-This code defines a recursive function `factorial` that takes an integer `n` as input. If `n` is 0, the function returns 1 (since the factorial of 0 is 1). Otherwise, it calls itself with `n-1` as input and multiplies the result by `n`.
+This code uses a `for` loop to iterate from 1 to 10, and prints the multiplication of 2 with each number in the range.
 
-The code then prompts the user to enter a number, calculates its factorial using the `factorial` function, and prints the result.
-
-Alternatively, you can use a loop instead of recursion:
+Output:
 ```
-def factorial(n):
-    result = 1
-    for i in range(1, n+1):
-        result *= i
-    return result
-
-num = int(input("Enter a number: "))
-result = factorial(num)
-print("The factorial of", num, "is", result)
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
 ```
-This code uses a loop to iterate from 1 to `n`, multiplying the result by each number in the sequence. The final result is returned at the end of the function.
+Let me know if you have any questions or need further modifications!
