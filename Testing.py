@@ -1,8 +1,10 @@
-Here is the updated code:
-
+Here is the final updated code:
 ```python
-for i in range(1, 11):
-    for j in range(1, 11):
-        print(f"{i} * {j} = {i*j}")
-    print()
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print("The factorial of 5 is", factorial(5))
 ```
