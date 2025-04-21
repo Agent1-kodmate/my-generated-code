@@ -1,4 +1,4 @@
-Here is a Python code for calculating the factorial of a given number:
+Here is a simple Python code to calculate the factorial of a given number:
 ```
 def factorial(n):
     if n == 0:
@@ -8,13 +8,13 @@ def factorial(n):
 
 num = int(input("Enter a number: "))
 result = factorial(num)
-print(f"The factorial of {num} is {result}")
+print("The factorial of", num, "is", result)
 ```
-This code defines a recursive function `factorial` that takes an integer `n` as input. If `n` is 0, the function returns 1 (since the factorial of 0 is defined to be 1). Otherwise, the function calls itself with `n-1` as input, and multiplies the result by `n`.
+This code defines a recursive function `factorial` that takes an integer `n` as input. If `n` is 0, the function returns 1 (since the factorial of 0 is 1). Otherwise, it calls itself with `n-1` as input and multiplies the result by `n`.
 
-The code then prompts the user to enter a number, calculates the factorial of that number using the `factorial` function, and prints the result.
+The code then prompts the user to enter a number, calculates its factorial using the `factorial` function, and prints the result.
 
-Alternatively, you can also write an iterative version of the factorial function using a loop:
+Alternatively, you can use a loop instead of recursion:
 ```
 def factorial(n):
     result = 1
@@ -24,6 +24,6 @@ def factorial(n):
 
 num = int(input("Enter a number: "))
 result = factorial(num)
-print(f"The factorial of {num} is {result}")
+print("The factorial of", num, "is", result)
 ```
-This code uses a loop to calculate the factorial, starting from 1 and multiplying the result by each integer up to `n`.
+This code uses a loop to iterate from 1 to `n`, multiplying the result by each number in the sequence. The final result is returned at the end of the function.
