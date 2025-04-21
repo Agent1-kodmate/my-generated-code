@@ -1,10 +1,10 @@
 Here is the final updated code:
 ```python
-def factorial(n):
-    if n == 0 or n == 1:
+def FACTORIAL(m):
+    if m == 0 or m == 1:
         return 1
     else:
-        return n * factorial(n-1)
+        return m * FACTORIAL(m-1)
 
-print("The factorial of 5 is", factorial(5))
+print("The factorial of 5 is", FACTORIAL(5))
 ```
