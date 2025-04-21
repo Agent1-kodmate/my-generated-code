@@ -1,1 +1,1 @@
-Provide code that prints table of 5
+Sample content
